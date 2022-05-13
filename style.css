@@ -2,6 +2,7 @@ body {
     padding: 0;
     margin: 0;
     height: 100vh;
+    display: flex;
     justify-content: center;
     align-items: center;
     background-color: cadetblue;
@@ -40,43 +41,43 @@ body {
     position: absolute;
     width: 800px;
     margin-top: -40px;
-    justify-content: center;
     display: flex;
+    justify-content: center;
 }
 .m-btn {
     border: 2px solid #23e3c2;
     padding: 5px;
-    border-radius:10px ;
+    border-radius: 10px;
     cursor: pointer;
     transition: 1s;
 }
 .m-btn:not(:last-child) {
-    margin-right: 30px;
+    margin-right: 40px;
 
 }
 .m-btn:hover {
-background-color:cadetblue ;
+background: cadetblue ;
 }
-#radio1:checked ~.first {
+#radio1:checked ~ .first {
     margin-left: 0;
 }
-#radio2:checked ~.first {
+#radio2:checked ~ .first {
     margin-left: -20%;
 }
-#radio3:checked ~.first {
+#radio3:checked ~ .first {
     margin-left: -40%;
 }
-#radio4:checked ~.first {
+#radio4:checked ~ .first {
     margin-left: -60%;
 }
-.nav-auto {
+/* .nav-auto {
     position: absolute;
     width: 800px;
     margin-top: 400px;
     display: flex;
     justify-content: center; 
     cursor: pointer
-}
+} */
 .nav-auto div {
     border: 2px solid #23e3c2;
     padding: 5px;
