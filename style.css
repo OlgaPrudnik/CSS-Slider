@@ -12,7 +12,7 @@ body {
 .container {
     position: relative;
     max-width: 1200px;
-    margin: 5% ;
+    margin: 5%  auto;
 }
 .slider {
     width: 100%;
@@ -47,6 +47,7 @@ body {
     position: absolute;
     left: 0%;
     bottom:0%;
+    font-size: 24px;
     font-weight: 900;
     padding-top: 20px;
     text-transform: uppercase;
@@ -100,4 +101,91 @@ body {
 #radio1:checked ~ .dots #label-1 {
     background: #ffeb3b;
     opacity: 1;
+}
+@media (max-width: 1240px) {
+    .container {
+        max-width: 95%;
+        margin: 10% auto;
+    }
+}
+@media (max-width: 920px) {
+    .container {
+        margin: 7% auto;
+    }
+    .caption {
+        font-size: 20px;
+    }
+    .dots {
+        bottom: -10%;
+    }
+    .dots label {
+        width: 13px;
+        height: 13px;
+    }
+}
+@media (max-width: 810px) {
+    .slider {
+        padding-top: 50%;
+    }
+}
+@media (max-width: 770px) {
+    .slider {
+        padding-top: 55%;
+    }
+}
+@media (max-width: 650px) {
+    .slider {
+        padding-top: 65%;
+    }
+}
+@media (max-width: 570px) {
+ .container {
+     max-width : 90%;
+ }
+ .dots {
+    bottom: -15%;
+    right: 39%;
+}
+.caption {
+    left: 0%;
+    font-size: 22px;
+    margin-top: 70px;
+
+}
+}
+@media(max-width: 500px) {
+    .dots {
+        bottom: -15%;
+        right: 35%;
+    }
+    .caption {
+        left: 0%;
+        font-size: 22px;
+        margin-top: 70px;
+        letter-spacing: 1px;
+        line-height: 120%;
+    
+    }
+}
+@media (max-width: 375px) {
+    .dots {
+        bottom: -20%;
+        right: 33%;
+    }
+    .caption {
+        left: 0%;
+        font-size: 18px;
+    
+    }
+}
+@media (max-width: 320px) {
+    .dots {
+        bottom: -30%;
+        right: 29%;
+    }
+    .caption {
+        left: 0%;
+        font-size: 16px;
+    
+    }
 }
